@@ -1,0 +1,57 @@
+name: memory_box
+description: A memory mapping app that transforms users' special moments into an interactive world map experience.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For date formatting
+  intl: ^0.18.0
+  
+  # For state management
+  provider: ^6.0.5
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.17.0
+  firebase_storage: ^11.6.0
+  js: ^0.7.0
+  
+  # Image picker for photos
+  image_picker: ^1.0.7
+  camera: ^0.10.5+9
+  image: ^4.1.7
+  
+  # Emoji picker
+  emoji_picker_flutter: ^2.0.0
+  
+  # Map - using flutter_map with Mapbox tiles (web compatible)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  
+  # Geolocation
+  geolocator: ^10.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Add custom fonts here if needed
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
+  #       - asset: fonts/CustomFont-Bold.ttf
+  #         weight: 700
